@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --main-color :#4169E1;
+    --text-transform : capitalize;
+}
+
+
+a{
+    color: white;
+}
+
+.landing{
+    background-image: url('../img/kids-1093758_1280.jpg');
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.landing h2{
+    color: #eee;
+}
+
+.small-landing{
+    background-color: rgba(22, 88, 212, 0.8);
+    z-index: 2;
+    min-height: 100vh;
+}
+
+.landing .row ul{
+    display: flex;
+}
+
+.landing .one .row ul li{
+    color: white;
+    margin-left: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.landing .navs .row ul li{
+    color: white;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.landing .row ul li a{
+    margin-left: 5px;
+}
+
+hr{
+    width: 100%;
+    color: #666;
+    size: 12px;
+}
+
+nav{
+    z-index: 100;
+}
+
+.dropdown-menu{
+    z-index: 100;
+}
+
+.pd nav{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.btn{
+    border-radius: 15px;
+}
+
+h2{
+    color: var(--main-color);
+}
+
+
+.brows-box{
+    background-color: #ccc;
+    padding: 12px;
+}
+
+.browse .icon{
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+
+.browse .icon i{
+    background-color: #fff;
+    padding: 10px;
+    color: 	var(--main-color);
+    font-size: 20px;
+}
+
+.browse .card{
+    background-color: #eee;
+}
+
+h5{
+    font-size: 16px;
+    text-transform: var(--text-transform);
+}
+
+.browse .card p{
+    font-size: 13px;
+    opacity: .5;
+}
+
+.burger{
+    background-color: #4169E1;
+}
+
+.burger span{
+    /* color: #eee; */
+    background-color: #eee;
+}
