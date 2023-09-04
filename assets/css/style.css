@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    text-transform: capitalize;
+    --bg-color : #eee;
 }
 
 :root{
@@ -114,11 +116,53 @@ h5{
     opacity: .5;
 }
 
-.burger{
-    background-color: #4169E1;
-}
-
 .burger span{
     /* color: #eee; */
-    background-color: #eee;
+    color: #333;
+    margin-top: 2px;
 }
+
+.more a{
+    color: var(--main-color);
+}
+
+
+.photo{
+    background-color: var(--bg-color);
+    min-height: 300px;
+    max-height: 400px;
+    margin-top: 70px;
+}
+
+.photo h4{
+    color: var(--main-color);
+}
+
+.photo .img{
+    max-width: 100%;
+}
+
+.photo .img img{
+    max-width: 100%;
+    min-height: 100%;
+    margin-top: -50px;
+}
+
+
+.photo ul li i{
+    color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
