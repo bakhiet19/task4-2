@@ -82,6 +82,7 @@ nav{
 
 h2{
     color: var(--main-color);
+    margin: 10px;
 }
 
 
@@ -276,3 +277,27 @@ h5{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width : 467px){
+    .education .text p{
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 5px 5px;
+    }
+    .right .card{
+        margin-bottom: 20px;
+    }
+    .right .card p{
+        padding: 5px;
+    }
+}
