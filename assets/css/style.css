@@ -127,6 +127,10 @@ h5{
 }
 
 
+.best{
+    margin-top: 120px;
+}
+
 .photo{
     background-color: var(--bg-color);
     min-height: 300px;
