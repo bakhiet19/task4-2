@@ -153,11 +153,27 @@ h5{
     color: var(--main-color);
 }
 
+/* .best .icon{
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 30%;
+} */
 
+.best .icon i{
+    color: var(--main-color);
+    font-size: 16px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
 
+.best h4{
+    color: var(--main-color);
+}
 
-
-
+.best p{
+    font-size: 14px;
+}
 
 
 
