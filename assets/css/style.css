@@ -237,6 +237,7 @@ h5{
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    background-attachment: fixed;
     min-height: 70vh;
     /* background-attachment: fixed; */
 }
@@ -274,10 +275,107 @@ h5{
 
 
 
+.about img{
+    max-width: 100%;
+}
+
+.about{
+    position: relative;
+}
+
+.bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #6c82c7;
+    height: 300px;
+    width: 250px;
+}
+
+
+.about h3{
+    color: var(--main-color);
+}
+
+
+.about ul li i{
+    color: var(--main-color);
+}
+
+
+.about ul li h4{
+    color: var(--main-color);
+}
+
+.news{
+    background-color: var(--bg-color);
+}
+
+.news .element{
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 2px #aaa;
+}
+
+.news .images{
+    background-image: url('../img/istockphoto-1340766096-612x612.jpg');
+    background-size: cover;
+    min-height: 100%;
+    background-position: center;
+}
+
+.news .images:last-of-type{
+    background-image: url('../img/3.jpg');
+}
+
+.news h5{
+    color: var(--main-color);
+}
+
+.news .p-text{
+    font-size: 14px;
+    max-width: 50%;
+    min-width: 50%;
+    margin: 0 auto;
+}
+
+.news .empty{
+    color: #ccc;
+    font-size: 12px;
+}
+
+.news a{
+    color: var(--main-color);
+}
+
+.news .txt{
+    background-color: #fff;
+
+}
+
+
+.news .txt p{
+    font-size: 14px;
+}
 
 
 
+.best h5{
+    color: var(--main-color);
+}
 
+.best button{
+    background-color: #fff;
+    padding: 5px 20px;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+
+.best button.even{
+    background-color: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+}
 
 
 
