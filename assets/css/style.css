@@ -6,6 +6,7 @@
     list-style-type: none;
     text-transform: capitalize;
     --bg-color : #eee;
+    --margin : 70px;
 }
 
 :root{
@@ -41,7 +42,6 @@ a{
 }
 
 .landing .one .row ul li{
-    color: white;
     margin-left: 20px;
     margin-top: 15px;
     font-size: 14px;
@@ -53,8 +53,10 @@ a{
     font-size: 14px;
 }
 
-.landing .row ul li a{
+.landing .row ul li a,
+.landing .row ul li i{
     margin-left: 5px;
+    color: white;
 }
 
 hr{
@@ -82,7 +84,7 @@ nav{
 
 h2{
     color: var(--main-color);
-    margin: 10px;
+    margin: 10px auto;
 }
 
 
@@ -117,9 +119,14 @@ h5{
     opacity: .5;
 }
 
+.burger{
+    background-color: red;
+    color: white;
+}
+
 .burger span{
     /* color: #eee; */
-    color: #333;
+    color: #fff;
     margin-top: 2px;
 }
 
@@ -136,7 +143,7 @@ h5{
     background-color: var(--bg-color);
     min-height: 300px;
     max-height: 400px;
-    margin-top: 70px;
+    margin-top: calc(var(--margin) + 30px);
 }
 
 .photo h4{
@@ -158,11 +165,11 @@ h5{
     color: var(--main-color);
 }
 
-/* .best .icon{
-    padding: 7px;
-    border: 1px solid #ccc;
-    border-radius: 30%;
-} */
+
+.best{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
 
 .best .card{
     transition: all 2s ease-in-out;
@@ -192,6 +199,8 @@ h5{
 
 .right{
     background-color: var(--bg-color);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
 }
 
 .right .card .card-body .iconss i:first-of-type{
@@ -232,6 +241,8 @@ h5{
 
 
 .education{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
     background-image: url('../img/14.jpg');
     background-position: center;
     background-size: cover;
@@ -239,6 +250,7 @@ h5{
     position: relative;
     background-attachment: fixed;
     min-height: 70vh;
+    max-height: 70vh;
     /* background-attachment: fixed; */
 }
 
@@ -281,6 +293,8 @@ h5{
 
 .about{
     position: relative;
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
 }
 
 .bg{
@@ -309,6 +323,8 @@ h5{
 
 .news{
     background-color: var(--bg-color);
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
 }
 
 .news .element{
@@ -377,6 +393,79 @@ h5{
     border: 1px solid var(--main-color);
 }
 
+.slider #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 60px;
+}
+.slider #quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+.slider #quote-carousel .carousel-indicators {
+    position: relative;
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-top: 20px;
+    margin-right: -19px;
+}
+.slider #quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all .4s ease-in;
+    vertical-align: middle;
+}
+.slider #quote-carousel .carousel-indicators .active {
+    width: 128px;
+    height: 128px;
+    opacity: 1;
+    transition: all .2s;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+.slider{
+    background-color: var(--bg-color);
+}
+
+
+
+footer{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+
+footer ul li a{
+    background-color: var(--bg-color);
+    padding: 7px;
+    border-radius: 50%;
+}
+
+
+footer .projects li{
+    margin-top: 7px;
+}
+
+
 
 
 
@@ -387,7 +476,10 @@ h5{
 
 
 @media(max-width : 467px){
-    .education .text p{
+    .education .text p,
+    .news .p-text,
+    .p-global
+    {
         max-width: 80%;
         margin: 0 auto;
         padding: 5px 5px;
