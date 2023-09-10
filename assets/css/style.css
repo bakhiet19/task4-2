@@ -583,7 +583,14 @@ footer .projects li{
 }
 
 
+footer img{
+    transition: all 2s ease;
+    cursor: pointer;
+}
 
+footer img:hover{
+    transform: scale(1.3);
+}
 
 
 
