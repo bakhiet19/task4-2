@@ -606,4 +606,7 @@ footer .projects li{
     .hr{
         display: block;
     }
+    h1{
+        font-size: 32px;
+    }
 }
