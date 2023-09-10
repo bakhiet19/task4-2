@@ -19,12 +19,44 @@ a{
     color: white;
 }
 
+h2{
+    color: var(--main-color);
+    margin: 10px auto;
+}
+
+hr{
+    width: 100%;
+    color: #666;
+    size: 12px;
+}
+
+.btn-btn{
+    border-radius: 25px;
+    padding: 10px 20px;
+    outline: 0;
+    border: none;
+}
+/* 
+.btn{
+    border-radius: 25px;
+    padding: 10px 30px;
+} */
+
+/* end global section */
+
+
+
+
+/* start landing section */
+
+
 .landing{
     background-image: url('../img/kids-1093758_1280.jpg');
     background-size: cover;
     min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: var(--margin);
 }
 
 .landing h2{
@@ -35,58 +67,54 @@ a{
     background-color: rgba(22, 88, 212, 0.8);
     z-index: 2;
     min-height: 100vh;
+    position: relative;
 }
 
-.landing .row ul{
-    display: flex;
-}
 
 .landing .one .row ul li{
-    margin-left: 20px;
-    margin-top: 15px;
     font-size: 14px;
+    padding-top: 20px;
 }
 
-.landing .navs .row ul li{
+.landing .navs ul li{
     color: white;
     margin-left: 20px;
     font-size: 14px;
+}
+
+.landing .row ul li a{
+    margin-left: 5px;
 }
 
 .landing .row ul li a,
 .landing .row ul li i{
-    margin-left: 5px;
     color: white;
 }
 
-hr{
-    width: 100%;
-    color: #666;
-    size: 12px;
+.landing .video{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
 }
 
-nav{
-    z-index: 100;
-}
 
-.dropdown-menu{
-    z-index: 100;
-}
+/* end landing section */
 
-.pd nav{
-    margin-top: 0;
-    padding-top: 0;
-}
 
-.btn{
-    border-radius: 15px;
-}
 
-h2{
-    color: var(--main-color);
-    margin: 10px auto;
-}
 
+
+
+
+/* start brows section */
+
+
+
+.brows{
+    margin-top: var(--margin);
+}
 
 .brows-box{
     background-color: #ccc;
@@ -119,16 +147,10 @@ h5{
     opacity: .5;
 }
 
-.burger{
-    background-color: red;
-    color: white;
-}
 
-.burger span{
-    /* color: #eee; */
-    color: #fff;
-    margin-top: 2px;
-}
+/* end brows section */
+
+
 
 .more a{
     color: var(--main-color);
@@ -137,39 +159,64 @@ h5{
 
 .best{
     margin-top: 120px;
+    margin-bottom: var(--margin);
 }
+
+
 
 .photo{
     background-color: var(--bg-color);
     min-height: 300px;
     max-height: 400px;
     margin-top: calc(var(--margin) + 30px);
+    padding-bottom: 30px;
 }
 
 .photo h4{
     color: var(--main-color);
 }
 
+.photo ul li{
+    margin-top: 10px;
+}
+
 .photo .img{
     max-width: 100%;
+    
+    /* min-width: ; */
 }
 
 .photo .img img{
     max-width: 100%;
-    min-height: 100%;
+    min-width: 100%;
     margin-top: -50px;
 }
 
+
+@media(max-width : 768px){
+    .photo .img{
+    max-width: 70%;
+    min-height: 70%;
+        margin: 20px auto;
+    }
+    .photo .img img{
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .best{
+        margin-top: 120px;
+    }
+    .photo{
+        padding-bottom: 20px;
+    }
+}
 
 .photo ul li i{
     color: var(--main-color);
 }
 
 
-.best{
-    margin-top: var(--margin);
-    margin-bottom: var(--margin);
-}
+
 
 .best .card{
     transition: all 2s ease-in-out;
@@ -194,6 +241,7 @@ h5{
 
 .best p{
     font-size: 14px;
+    margin-bottom: 30px;
 }
 
 
@@ -209,6 +257,9 @@ h5{
     font-size: 14px;
 }
 
+.right .p-global{
+    margin-bottom: 35px;
+}
 
 .right .card .card-body .iconss i:last-of-type{
     color: #CCCC00;
@@ -219,6 +270,7 @@ h5{
 .right .card .card-body p{
     font-size: 14px;
     color: #999;
+    /* margin-bottom: 30px; */
 }
 
 .right .card .card-body p:last-of-type{
@@ -276,13 +328,13 @@ h5{
 }
 
 .education .text p{
-    max-width: 50%;
+    max-width: 70%;
     margin: 0 auto;
     padding: 5px 10px;
 }
 
-.education .text .pd{
-    margin: 10px auto;
+.education .text .bt{
+    margin: 20px auto;
 }
 
 
@@ -445,6 +497,58 @@ h5{
 .slider{
     background-color: var(--bg-color);
 }
+
+
+
+.choose{
+    margin-top: var(--margin);
+    margin-bottom: var(--margin);
+}
+
+.choose .choose-btn{
+    color: #fff;
+}
+
+.choose button:hover{
+    color: #fff;
+}
+
+
+.choose .img{
+    max-width: 50%;
+}
+
+.choose .img img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
