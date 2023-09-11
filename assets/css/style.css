@@ -47,11 +47,11 @@ hr{
     background-color: #fff;
 }
 
-h1{
-    min-width: 100%;
-    padding: 10px;
-}
 
+.btns-light:hover{
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
 
 .btns{
     padding: 10px 20px;
@@ -60,6 +60,19 @@ h1{
     background-color: var(--main-color);
     border: 1px solid var(--main-color);
 }
+
+.btns:hover{
+    color: var(--main-color);
+    background-color: var(--text-color);
+}
+
+
+h1{
+    min-width: 100%;
+    padding: 10px;
+}
+
+
 
 /* 
 .btn{
@@ -477,19 +490,8 @@ h5{
     color: var(--main-color);
 }
 
-.best button{
-    background-color: #fff;
-    padding: 5px 20px;
-    color: var(--main-color);
-    border: 1px solid var(--main-color);
-}
 
 
-.best button.even{
-    background-color: var(--main-color);
-    color: #fff;
-    border: 1px solid var(--main-color);
-}
 
 .slider #quote-carousel {
     padding: 0 10px 30px 10px;
