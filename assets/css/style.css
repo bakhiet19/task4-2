@@ -21,11 +21,6 @@ a{
     color: white;
 }
 
-h2{
-    color: var(--main-color);
-    margin: 10px auto;
-}
-
 hr{
     width: 100%;
     color: #666;
@@ -72,14 +67,22 @@ h1{
     padding: 10px;
 }
 
+h2{
+    color: #4169E1 !important;
+    margin: 10px auto;
+    transition: all ease-in-out 1s;
+}
 
+h2:hover{
+    width: 25%;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--main-color);
+}
 
-/* 
-.btn{
-    border-radius: 25px;
-    padding: 10px 30px;
-} */
-
+h5{
+    font-size: 16px;
+    text-transform: var(--text-transform);
+}
 /* end global section */
 
 
@@ -98,9 +101,6 @@ h1{
     color: var(--text-color);
 }
 
-.landing h2{
-    color: #eee;
-}
 
 .small-landing{
     background-color: rgba(22, 88, 212, 0.8);
@@ -173,9 +173,15 @@ h1{
     background-color: #eee;
 }
 
-h5{
-    font-size: 16px;
-    text-transform: var(--text-transform);
+.browse .browse-card .card{
+    opacity: .5;
+    transition: all 1s ease;
+}
+
+.browse .browse-card .card:hover{
+    cursor: pointer;
+    opacity: 1;
+    border: 2px solid var(--main-color);
 }
 
 .browse .card p{
@@ -183,18 +189,15 @@ h5{
     opacity: .5;
 }
 
-
+.more a{
+    color: var(--main-color);
+}
 /* end brows section */
 
 
 
-.more a{
-    color: var(--main-color);
-}
 
-
-
-
+/* start photo section */
 
 
 .photo{
@@ -207,10 +210,6 @@ h5{
 
 .photo h3{
     color: var(--main-color);
-}
-
-.photo ul li{
-    margin-top: 10px;
 }
 
 .photo .img{
@@ -232,36 +231,21 @@ h5{
     cursor: pointer;
 }
 
-@media(max-width : 768px){
-    .photo .img{
-    max-width: 70%;
-    min-height: 70%;
-        margin: 20px auto;
-    }
-    .photo .img img{
-        max-width: 100%;
-        margin: 20px auto;
-    }
-    .best{
-        margin-top: 120px;
-    }
-    .photo{
-        padding-bottom: 20px;
-    }
+.photo ul li{
+    margin-top: 10px;
 }
-
 .photo ul li i{
     color: var(--main-color);
 }
 
 
+/* end photo section */
 
 
 
 
 
-
-
+/* start best section */
 
 
 .best{
@@ -299,9 +283,11 @@ h5{
 }
 
 
+/* end best section */
 
 
 
+/* start right section */
 
 
 .right{
@@ -310,9 +296,17 @@ h5{
     margin-bottom: var(--margin);
 }
 
+.right .card{
+    transition: all 1s ease-in-out;
+}
+
+.right .card:hover{
+    transform: rotate(360deg);
+}
+
 .right .card .card-body .iconss i:first-of-type{
     color: var(--main-color);
-    text-transform: capitalize;
+    text-transform: capitalize !important;
     font-size: 14px;
 }
 
@@ -323,7 +317,7 @@ h5{
 .right .card .card-body .iconss i:last-of-type{
     color: #CCCC00;
     font-size: 14px;
-    text-transform: lowercase;
+    text-transform: lowercase !important;
 }
 
 .right .card .card-body p{
@@ -342,13 +336,12 @@ h5{
 }
 
 
-.right .card{
-    transition: all 1s ease-in-out;
-}
+/* end right section */
 
-.right .card:hover{
-    transform: rotate(360deg);
-}
+
+
+
+/* start education section */
 
 
 .education{
@@ -376,15 +369,15 @@ h5{
     min-height: 100%;
 }
 
+.education h2{
+    color: var(--text-color);
+}
 
 .education .text{
     color: var(--bg-color);
     z-index: 100;
 }
 
-.education .text h2{
-    color: var(--bg-color);
-}
 
 .education .text p{
     max-width: 70%;
@@ -396,11 +389,13 @@ h5{
     margin: 20px auto;
 }
 
+/* end education section */
 
 
-.about img{
-    max-width: 100%;
-}
+
+
+
+/* start about section */
 
 .about{
     position: relative;
@@ -408,6 +403,9 @@ h5{
     margin-bottom: var(--margin);
 }
 
+.about img{
+    max-width: 100%;
+}
 .bg{
     position: absolute;
     right: 0;
@@ -432,6 +430,14 @@ h5{
     color: var(--main-color);
 }
 
+/* end about section */
+
+
+
+
+
+/* start news section */
+
 .news{
     background-color: var(--bg-color);
     margin-top: var(--margin);
@@ -443,6 +449,11 @@ h5{
     box-shadow: 1px 1px 2px #aaa;
 }
 
+.news .element:hover{
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
+
 .news .images{
     background-image: url('../img/istockphoto-1340766096-612x612.jpg');
     background-size: cover;
@@ -452,10 +463,6 @@ h5{
 
 .news .images:last-of-type{
     background-image: url('../img/3.jpg');
-}
-
-.news h5{
-    color: var(--main-color);
 }
 
 .news .p-text{
@@ -485,13 +492,22 @@ h5{
 }
 
 
+/* end news section */
 
-.best h5{
+
+.best h5,
+.news h5{
     color: var(--main-color);
 }
 
 
 
+
+
+/* strat slider section */
+.slider{
+    background-color: var(--bg-color);
+}
 
 .slider #quote-carousel {
     padding: 0 10px 30px 10px;
@@ -541,12 +557,12 @@ h5{
     margin-right: 10px;
 }
 
-
-.slider{
-    background-color: var(--bg-color);
-}
+/* end slider section */
 
 
+
+
+/* strat choose section */
 
 .choose{
     margin-top: var(--margin);
@@ -571,34 +587,10 @@ h5{
 }
 
 
+/* end choose section */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* strat footer section */
 
 footer{
     background-color: var(--main-color);
@@ -634,7 +626,51 @@ footer img:hover{
 }
 
 
+/* end footer section */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width : 768px){
+    .photo .img{
+    max-width: 70%;
+    min-height: 70%;
+        margin: 20px auto;
+    }
+    .photo .img img{
+        max-width: 100%;
+        margin: 20px auto;
+    }
+    .best{
+        margin-top: 120px;
+    }
+    .photo{
+        padding-bottom: 20px;
+    }
+    .hr{
+        display: block;
+    }
+}
 
 @media(max-width : 467px){
     .education .text p,
@@ -651,10 +687,10 @@ footer img:hover{
     .right .card p{
         padding: 5px;
     }
-    .hr{
-        display: block;
-    }
+    
     .landing .video h1{
         font-size: 24px;
     }
 }
+
+
