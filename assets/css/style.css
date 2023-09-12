@@ -89,6 +89,10 @@ h5{
 
 
 
+
+
+
+
 /* start landing section */
 
 
@@ -124,6 +128,11 @@ h5{
     color: var(--text-color);
     opacity: .5;
     font-size: 14px;
+    transition: all 1s ease;
+}
+
+.landing .navs ul li:hover{
+    opacity: 1;
 }
 
 .landing .navs ul li:first-of-type{
