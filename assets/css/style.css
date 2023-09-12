@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style-type: none;
     text-transform: capitalize;
-   
+   scroll-behavior: smooth;
 }
 
 :root{
@@ -70,10 +70,11 @@ h1{
 h2{
     color: #4169E1 !important;
     margin: 10px auto;
-    transition: all ease-in-out 1s;
+    /* transition: all ease-in-out 1s; */
 }
 
 h2:hover{
+    cursor: pointer;
     width: 25%;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--main-color);
@@ -109,6 +110,9 @@ h5{
     position: relative;
 }
 
+.wd{
+    min-width: 100%;
+} 
 
 .landing .one .row ul li{
     font-size: 14px;
@@ -118,14 +122,19 @@ h5{
 
 .landing .navs ul li{
     color: var(--text-color);
-    margin-left: 20px;
+    opacity: .5;
     font-size: 14px;
+}
+
+.landing .navs ul li:first-of-type{
+    opacity: 1;
 }
 
 .landing .row ul li a{
     margin-left: 5px;
     color: var(--text-color);
 }
+
 
 .landing .video{
     position: absolute;
@@ -134,6 +143,22 @@ h5{
     transform: translate(-50% , -50%);
     min-width: 100%;
 }
+
+.landing .navs ul li
+{
+    margin-top: 22px;
+}
+
+.landing .navs h3{
+    font-weight: bold;
+}
+
+
+
+/* .landing .navs h3{
+    margin: 0;
+} */
+
 
 /* end landing section */
 
@@ -229,6 +254,7 @@ h5{
 .photo .img img:hover{
     opacity: 1;
     cursor: pointer;
+    border: 2px solid var(--main-color);
 }
 
 .photo ul li{
@@ -406,6 +432,7 @@ h5{
 .about img{
     max-width: 100%;
 }
+
 .bg{
     position: absolute;
     right: 0;
@@ -505,6 +532,8 @@ h5{
 
 
 /* strat slider section */
+
+
 .slider{
     background-color: var(--bg-color);
 }
@@ -584,8 +613,15 @@ h5{
 
 .choose .img img{
     max-width: 100%;
+    opacity: .5;
+    transition: all 2s ease-out;
 }
 
+.choose .img img:hover{
+    opacity: 1;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+}
 
 /* end choose section */
 
@@ -597,6 +633,9 @@ footer{
     color: #fff;
 }
 
+.social-icon{
+    min-width: 100%;
+}
 
 footer ul li a{
     background-color: var(--bg-color);
@@ -648,7 +687,11 @@ footer img:hover{
 
 
 
-
+@media(max-width : 992px){
+    .video{
+        margin-top: 100px;
+    }
+}
 
 
 @media(max-width : 768px){
@@ -670,6 +713,9 @@ footer img:hover{
     .hr{
         display: block;
     }
+    .video{
+        display: none;
+    }
 }
 
 @media(max-width : 467px){
@@ -687,10 +733,10 @@ footer img:hover{
     .right .card p{
         padding: 5px;
     }
-    
-    .landing .video h1{
-        font-size: 24px;
+    .video{
+        display: none;
     }
+   
 }
 
 
